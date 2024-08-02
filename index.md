@@ -32,7 +32,7 @@ title: "Explanation Ontology: A General-Purpose, Semantic Representation for Sup
   <br/>
     We build on these explanation type descriptions to show how to utilize the EO model to represent explanations in <em>five</em> use cases spanning the domains of finance, food, and healthcare. We include competency questions that evaluate the EO's capabilities to provide guidance for system designers on how to apply our ontology to their own use cases. This guidance includes allowing system designers to query the EO directly and providing them exemplar queries to explore content in the EO represented use cases. 
   <br/>
-    We have released this significantly expanded version of the Explanation Ontology at <a href="https://purl.org/heals/eo" >https://purl.org/heals/eo</a> and updated here on our <a href ="https://tetherless-world.github.io/explanation-ontology">resource website</a>, with supporting documentation. 
+    We have released this significantly expanded version of the Explanation Ontology at <a href="https://purl.org/heals/eo" >https://purl.org/heals/eo</a> and updated here on our <a href ="{{site.url}}">resource website</a>, with supporting documentation. 
   <br/>
     Overall, through the EO model, we aim to help system designers be better informed about explanations and support these explanations that can be composed, given their systems' outputs from various AI models, including a mix of machine learning, logical and explainer models, and different types of data and knowledge available to their systems.</p>
  </content>
@@ -49,11 +49,11 @@ title: "Explanation Ontology: A General-Purpose, Semantic Representation for Sup
   </tr>  
   <tr>
     <td>Ontology</td>
-    <td><a href="ontology">Explanation Ontology</a> </td> 
+    <td><a href="{{site.baseurl}}ontology">Explanation Ontology</a> </td> 
   </tr>
   <tr>
     <td>Explanation Types</td>
-    <td><a href="modeling#explanationtypes">Modeling</a> </td> 
+    <td><a href="{{site.baseurl}}modeling#explanationtypes">Modeling</a> </td> 
   </tr>
     <!--<tr>
     <td> </td>
@@ -61,16 +61,16 @@ title: "Explanation Ontology: A General-Purpose, Semantic Representation for Sup
   </tr>-->
     <tr>
     <td>Examples</td>
-    <td><a href="clinicalexample">Use Case Examples</a> </td> 
+    <td><a href="{{site.baseurl}}clinicalexample">Use Case Examples</a> </td> 
   </tr>
    <tr>
     <td>Competency Questions </td>
-    <td><a href="competencyquestions#sparql">SPARQL Queries</a> </td> 
+    <td><a href="{{site.baseurl}}competencyquestions#sparql">SPARQL Queries</a> </td> 
   </tr>
    <tr>
       <tr>
     <td>Protocol Guidance on Usage of Ontology</td>
-    <td><a href="protocol">Protocol</a> </td> 
+    <td><a href="{{site.baseurl}}protocol">Protocol</a> </td> 
   </tr>
     <td>Tools Used </td>
     <td><a href="index#toolsused">References to tools used</a> </td> 
