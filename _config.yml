@@ -1,0 +1,30 @@
+title: Explanation Ontology - Modeling Explainability in User-Centered AI System Design
+
+# Dependencies
+markdown:         kramdown
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+url:              https://g-nitin.github.io/ontology/
+baseurl:          https://g-nitin.github.io/ontology/
+
+author:
+  name:           'Mark Otto'
+  url:            https://twitter.com/mdo
+
+paginate:         5
+
+# Gems
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:          https://g-nitin.github.io/ontology/
