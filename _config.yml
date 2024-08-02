@@ -8,8 +8,8 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-url:              https://github.com/g-nitin/ontology-website/
-baseurl:          https://github.com/g-nitin/ontology-website/
+url:              https://g-nitin.github.io/ontology-website/
+baseurl:          https://g-nitin.github.io/ontology-website/
 
 author:
   name:           'Mark Otto'
@@ -27,4 +27,4 @@ plugins:
 version:          2.1.0
 
 github:
-  repo:          https://github.com/g-nitin/ontology-website/
+  repo:          https://g-nitin.github.io/ontology-website/
