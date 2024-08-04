@@ -49,11 +49,11 @@ title: "Explanation Ontology: A General-Purpose, Semantic Representation for Sup
   </tr>  
   <tr>
     <td>Ontology</td>
-    <td><a href="{{site.baseurl}}ontology">Explanation Ontology</a> </td> 
+    <td><a href="{{site.baseurl}}files/ontology">Explanation Ontology</a> </td> 
   </tr>
   <tr>
     <td>Explanation Types</td>
-    <td><a href="{{site.baseurl}}modeling#explanationtypes">Modeling</a> </td> 
+    <td><a href="{{site.baseurl}}files/modeling#explanationtypes">Modeling</a> </td> 
   </tr>
     <!--<tr>
     <td> </td>
@@ -61,16 +61,16 @@ title: "Explanation Ontology: A General-Purpose, Semantic Representation for Sup
   </tr>-->
     <tr>
     <td>Examples</td>
-    <td><a href="{{site.baseurl}}clinicalexample">Use Case Examples</a> </td> 
+    <td><a href="{{site.baseurl}}files/clinicalexample">Use Case Examples</a> </td> 
   </tr>
    <tr>
     <td>Competency Questions </td>
-    <td><a href="{{site.baseurl}}competencyquestions#sparql">SPARQL Queries</a> </td> 
+    <td><a href="{{site.baseurl}}files/competencyquestions#sparql">SPARQL Queries</a> </td> 
   </tr>
    <tr>
       <tr>
     <td>Protocol Guidance on Usage of Ontology</td>
-    <td><a href="{{site.baseurl}}protocol">Protocol</a> </td> 
+    <td><a href="{{site.baseurl}}files/protocol">Protocol</a> </td> 
   </tr>
     <td>Tools Used </td>
     <td><a href="index#toolsused">References to tools used</a> </td> 
