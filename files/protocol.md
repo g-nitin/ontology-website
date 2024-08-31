@@ -29,7 +29,5 @@ Below, we present a protocol that can be used as a guide to reuse our explanatio
 <h3 id="resources">Resource to supplement protocol</h3>
 This protocol can be further understood, by browsing the resources we have made available:
    <ul>
-   <li>Example questions addressed by each explanation type can be browsed via our <a href="{{site.baseurl}}files/modeling">modeling page</a></li>
    <li>Components of each explanation type can be queried by competency question <a href="{{site.baseurl}}files/competencyquestions/#question2">#2</a></li>
-   <li>Sufficiency conditions can be browsed via the explanation types <a href="{{site.baseurl}}files/modeling">modeling page</a></li>
    </ul>

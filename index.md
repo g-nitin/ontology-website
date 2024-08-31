@@ -64,13 +64,9 @@ title: "Explanation Ontology: A General-Purpose, Semantic Representation for Sup
     <th>Resources</th>
     <th>Links</th> 
   </tr>  
-  <tr>
+  <!-- <tr>
     <td>Ontology</td>
     <td><a href="{{site.baseurl}}files/ontology">Explanation Ontology</a> </td> 
-  </tr>
-  <tr>
-    <td>Explanation Types</td>
-    <td><a href="{{site.baseurl}}files/modeling#explanationtypes">Modeling</a> </td> 
   </tr>
     <tr>
     <td>Examples</td>
@@ -87,7 +83,7 @@ title: "Explanation Ontology: A General-Purpose, Semantic Representation for Sup
   </tr>
     <td>Tools Used </td>
     <td><a href="index#toolsused">References to tools used</a> </td> 
-  </tr>
+  </tr> -->
 </table>
 </ul>
 </content>
@@ -97,7 +93,7 @@ title: "Explanation Ontology: A General-Purpose, Semantic Representation for Sup
 <content>
 <h2>Tools Used during Development</h2>
   <ul>
-  <li>Ontology Editor: <a href="https://protege.stanford.edu/">Protege</a></li>
+  <li>Ontology Editor: <a href="https://protege.stanford.edu/">Protégé</a></li>
   <li>Conceptual Diagram created using <a href="https://app.diagrams.net/">draw.io</a></li>
   <li>Ontology documentation tool: <a href="https://github.com/RDFLib/pyLODE">pyLODE</a></li>
   <li>RDF Visualization generated with <a href="https://rdflib.readthedocs.io/en/stable/">RDFLib</a></li>

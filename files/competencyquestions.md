@@ -22,43 +22,43 @@ title: Competency Questions
     </thead>
     <tbody>
       <tr>
-        <td><a href="#question1">(Q1).</a>What are the different types of planners used in automated planning?</td>
+        <td><a href="#question1">(Q1). </a>What are the different types of planners used in automated planning?</td>
         <td>Identifies and lists the various types of planners utilized in the field of automated planning.</td>
       </tr>
       <tr>
-        <td><a href="#question2">(Q2).</a>What is the relevance of a planner in a given problem domain?</td>
+        <td><a href="#question2">(Q2). </a>What is the relevance of a planner in a given problem domain?</td>
         <td>Explores the importance and applicability of different planners within a specific problem domain.</td>
       </tr>
       <tr>
-        <td><a href="#question2">(Q3).</a>What are the available actions for a given domain?</td>
+        <td><a href="#question2">(Q3). </a>What are the available actions for a given domain?</td>
         <td>Provides a list of actions that can be performed within a specified domain.</td>
       </tr>
       <tr>
-        <td><a href="#question4">(Q4).</a>What problems in a domain satisfy a given condition?</td>
+        <td><a href="#question4">(Q4). </a>What problems in a domain satisfy a given condition?</td>
         <td>Identifies problems within a domain that meet certain specified conditions.</td>
       </tr>
       <tr>
-        <td><a href="#question5">(Q5).</a>What are all requirements a given domain has?</td>
+        <td><a href="#question5">(Q5). </a>What are all requirements a given domain has?</td>
         <td> Enumerates all the prerequisites or conditions necessary within a particular domain.</td>
       </tr>
       <tr>
-        <td><a href="#question6">(Q6).</a>What is the cost associated with generating a plan for a given problem?</td>
+        <td><a href="#question6">(Q6). </a>What is the cost associated with generating a plan for a given problem?</td>
         <td>Determines the cost involved in creating a plan to solve a specified problem.</td>
       </tr>
       <tr>
-        <td><a href="#question7">(Q7).</a>How many parameters does a specific action have?</td>
+        <td><a href="#question7">(Q7). </a>How many parameters does a specific action have?</td>
         <td>Counts the number of parameters required for a particular action within a domain.</td>
       </tr>
       <tr>
-        <td><a href="#question8">(Q8).</a>What planning type a specific planner belongs to?</td>
+        <td><a href="#question8">(Q8). </a>What planning type a specific planner belongs to?</td>
         <td>Classifies a given planner into its respective planning type.</td>
       </tr>
       <tr>
-        <td><a href="#question9">(Q9).</a>What requirements does a given planner support?</td>
+        <td><a href="#question9">(Q9). </a>What requirements does a given planner support?</td>
         <td> Lists the requirements that a specific planner is capable of addressing.</td>
       </tr>
       <tr>
-        <td><a href="#question10">(Q10).</a>What are the different parameter types present in a domain?</td>
+        <td><a href="#question10">(Q10). </a>What are the different parameter types present in a domain?</td>
         <td>Identifies and lists the various types of parameters present within a specified domain.</td>
       </tr>
     </tbody>
