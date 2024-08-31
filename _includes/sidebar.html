@@ -11,60 +11,63 @@
 
     <nav class="sidebar-nav">
       <ul style="list-style: none;">
-        <li><button class="collapsible">
-<a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index">About</a></button>
-        <div class="button-content">
-        <ul>
-          <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#abstract">Descriptions</a></li>
 
-          <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#publications">Publications</a></li>
-
-        </ul>
-        </div>
+        <li><button class="collapsible">  
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index">About</a></button>
+          <div class="button-content">
+            <ul>
+              <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#abstract">Abstract</a></li>
+              <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#publications">Publications</a></li>
+            </ul>
+          </div>
         </li>      
-      <li><button class="collapsible">
-<a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/ontology">Ontology</a></button>
-        <div class="button-content">
-        <ul>
-          <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/ontology#ontologyabout">About Ontology</a></li>
-          <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/ontology#ontologylinks">Access Links</a></li>
-           <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/ontology#ontologymetadata">Ontology Metadata</a></li>
-
-        </ul>
-        </div>
-        </li>
-        <li><button class="collapsible">
-<a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/modeling">Explanation Types</a></button>
-        <div class="button-content">
-          <ul>
-            <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/modeling#explanationtypes">Catalog</a></li>
-            <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/modeling#modelingexplanations">Modeling</a></li>
-          </ul>
-        </div>
-        </li>
-         <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/clinicalexample">Use Cases</a></li>
-
-        <li><button class="collapsible">
-<a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/competencyquestions">Competency Questions</a></button>
-        <div class="button-content">
-          <ul>
-            <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/competencyquestions#sparql">SPARQL Queries</a></li>
-          </ul>
-        </div>
-        </li>
-        <li><button class="collapsible">
-<a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#resoruces">Resources</a></button>
-        <div class="button-content">
-        <ul>
-          <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/protocol">Protocol Guidance</a></li>
-          <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/presentations">Presentations</a></li>
-          <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#toolsused">Tools Used</a></li>
-        </ul>
-        </div>
-        </li>        
-           
       
+        <li><button class="collapsible">
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/ontology">Ontology</a></button>
+          <div class="button-content">
+            <ul>
+              <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/ontology#ontologyabout">About Ontology</a></li>
+              <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/ontology#ontologylinks">Access Links</a></li>
+              <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/ontology#ontologymetadata">Ontology Metadata</a></li>
+            </ul>
+          </div>
+        </li>
+        
+        <li><button class="collapsible">
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/modeling">Explanation Types</a></button>
+          <div class="button-content">
+            <ul>
+              <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/modeling#explanationtypes">Catalog</a></li>
+              <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/modeling#modelingexplanations">Modeling</a></li>
+            </ul>
+          </div>
+        </li>
+        
+        <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/clinicalexample">Use Cases</a></li>
+        
+        <li><button class="collapsible">
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/competencyquestions">Competency Questions</a></button>
+          <div class="button-content">
+            <ul>
+              <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/competencyquestions#sparql">SPARQL Queries</a></li>
+            </ul>
+          </div>
+        </li>
+        
+        <li><button class="collapsible">
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#resoruces">Resources</a></button>
+          <div class="button-content">
+            <ul>
+              <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/protocol">Protocol Guidance</a></li>
+              <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}files/presentations">Presentations</a></li>
+              <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#toolsused">Tools Used</a></li>
+            </ul>
+          </div>
+        </li>
 
+        <li><a class="sidebar-nav-item" href="https://github.com/BharathMuppasani/AI-Planning-Ontology/">GitHub Project</a></li>
+        <li><a class="sidebar-nav-item" href="{{ site.github.repo }}">Site Source</a></li>
+           
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
         `layout: page` in the front-matter. See readme for usage.
@@ -79,12 +82,9 @@
         {% endif %}
       {% endfor %} -->
 
-      <!--<a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>-->
-        <li><a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a></li>
       </ul>
-      <!--<span class="sidebar-nav-item">Currently v{{ site.version }}</span>-->
     </nav>
 
-    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+      <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>
 </div>

@@ -6,39 +6,56 @@ title: "Explanation Ontology: A General-Purpose, Semantic Representation for Sup
 [Abstract](#abstract) | [Resources](#resources) | [Tools Used](#toolsused) | [Team](#contributors) | [Publications](#publications)
 
 
-<h1 class="page-title" style="text-transform:uppercase;" id="header">Explanation Ontology: A General-Purpose, Semantic Representation for Supporting User-Centered Explanations</h1>
+<h1 class="page-title" style="text-transform:uppercase;" id="header">A Planning Ontology to Represent and Exploit Planning Knowledge for Performance Efficiency</h1>
 
 <p class="message">A website to navigate resources open-sourced for the Explanation Ontology. Use the side navigation panel to explore different sections of the website and click on an add symbol for more navigation options under some sections.</p>
-
-<!-- <table>
-  <tbody>
-    <tr>
-      <td><a href="#abstract">Abstract</a></td>
-    </tr>
-  </tbody>
-</table> -->
 
 <hr>
 <article class="mb-5" id="abstract">
 <content>
-  
-  
-<h2>Abstract</h2>
-  <p>In the past decade, trustworthy Artificial Intelligence (AI) has emerged as a focus for the AI community to ensure better adoption of AI models, and explainable AI is a cornerstone in this area. Over the years, the focus has shifted from building transparent AI methods to making recommendations on how to make black-box or opaque machine learning models and their results more understandable by experts and non-expert users. 
-    <br/>
-    In our <a href="https://arxiv.org/abs/2010.01479">previous work</a>, to address the goal of supporting user-centered explanations that make model recommendations more explainable, we developed an Explanation Ontology (EO), a general-purpose representation, to help system designers, our intended users of the EO, connect explanations to their underlying data and knowledge. 
-  <br/>
-    We now addresses the apparent need for improved interoperability to support a wider range of use cases. We expand the EO, mainly in the system attributes contributing to explanations, by introducing new classes and properties to support a broader range of state-of-the-art explainer models. We present the expanded ontology model, highlighting the classes and properties that are important to model a larger set of <em>fifteen</em> literature-backed explanation types that are supported within the EO.
-  <br/>
-    We build on these explanation type descriptions to show how to utilize the EO model to represent explanations in <em>five</em> use cases spanning the domains of finance, food, and healthcare. We include competency questions that evaluate the EO's capabilities to provide guidance for system designers on how to apply our ontology to their own use cases. This guidance includes allowing system designers to query the EO directly and providing them exemplar queries to explore content in the EO represented use cases. 
-  <br/>
-    We have released this significantly expanded version of the Explanation Ontology at <a href="https://purl.org/heals/eo" >https://purl.org/heals/eo</a> and updated here on our <a href ="{{site.url}}">resource website</a>, with supporting documentation. 
-  <br/>
-    Overall, through the EO model, we aim to help system designers be better informed about explanations and support these explanations that can be composed, given their systems' outputs from various AI models, including a mix of machine learning, logical and explainer models, and different types of data and knowledge available to their systems.</p>
+  <h2>Abstract</h2>
+    <p style="text-indent: 4ch">
+      Ontologies are known for their ability to organize rich metadata, support the identification of novel insights via semantic queries, and promote reuse. In this paper, we consider the problem of automated planning, where the objective is to find a sequence of actions that will move an agent from an initial state of the world to a desired goal state. We hypothesize that given a large number of available planners and diverse planning domains; they carry essential information that can be leveraged to identify suitable planners and improve their performance for a domain. We use data on planning domains and planners from the International Planning Competition (IPC) to construct a planning ontology and demonstrate via experiments in two use cases that the ontology can lead to the selection of promising planners and improving their performance using macros - a form of action ordering constraints extracted from planning ontology. We also make the planning ontology and associated resources available to the community to promote further research.
+    </p>
  </content>
- 
- <hr/>
- <article class="mb-5" id="resources">
+
+<hr>
+<article class="mb-5" id="introduction">
+<content>
+  <h2>Introduction</h2>
+    <p style="text-indent: 4ch">
+    Automated planning, where the objective is to find a sequence of actions that will transition an agent from the initial state of the world to a desired goal state, is an active sub-field of Artificial Intelligence (AI). The ability to generate plans and make decisions in complex domains, such as robotics, logistics, and manufacturing, has led to significant progress in the automation of planning. Currently, there are numerous planning domains, planners, search algorithms, and associated heuristics in the field of automated planning. Each planner, in conjunction with a search algorithm and heuristic, generates plans with varying degrees of quality, cost, and optimality. The empirical results available for various planning problems, ranked by planner performance and the heuristics used as available in International Planning Competition (IPC), can provide valuable information to identify various tunable parameters to improve planner performance. Traditionally, improving planner performance involves manually curating potential combinations to identify the optimal planner configuration. However, there has been limited effort to model the available information in a structured knowledge representation, such as an ontology, to facilitate efficient reasoning and further enhance planner performance.
+    </p>
+    <p style="text-indent: 4ch">
+      To address the challenge of representing planning problems and associated information in a structured manner, we propose an ontology for AI planning. An ontology is a formal representation of concepts and their relationships, which enables systematic analysis of planning domains and planners. The proposed ontology captures the features of a domain and the capabilities of planners, facilitating reasoning with existing planning problems, identifying similarities, and suggesting different planner configurations. Planning ontology can also be a useful resource for the creation of new planners as it captures essential information about planning domains and planners, which can be leveraged to design more efficient planning algorithms. Furthermore, ontology can promote knowledge sharing and collaboration within the planning community.
+    </p>
+    <p style="text-indent: 4ch">
+      In the field of planning, several attempts have been made to create ontologies to enhance the understanding of planners’ capabilities. For instance, Plan-Taxonomy introduced a taxonomy that aimed to explain the functionality of planners. In PLANET, authors present a comprehensive ontology called which represents plans in real-world domains and can be leveraged to construct new applications. Nonetheless, the reusability of PLANET is limited as it is not open-sourced. Consequently, researchers face difficulty in extending or replicating the ontology.
+    </p>
+ </content>
+
+<hr>
+<article class="mb-5" id="contributions">
+<content>
+  <h2>Contributions</h2>
+    <p style="text-indent: 4ch">
+      We build an ontology for planning with the aim to identify and improve an efficient planner for a domain based on performance. For this, we leverage information obtained from the IPC. Building a planning ontology using data from IPC offers several benefits such as a comprehensive coverage of planning domains, a rich source for various benchmark evaluation metrics, and documentation for the planners. However, the ontology is not limited to the PDDL representation or domains in IPC, and can easily be extended to any. Our contributions are at the intersection of ontologies and AI planning in ontology development and showing benefits in two usecases:
+      <ol>
+        <li>
+          <b>Ontology Development:</b> We developed an ontology for AI planning that can be used to represent and organize knowledge related to planning problems. This ontology provides a structured way to capture the relationships between different planning concepts and enables more efficient and effective knowledge sharing and reuse.
+        </li>
+        <li>
+          <b>Usecase 1:</b> Identifying Most Promising Planner for Performance: We demonstrate the ontology’s usage for identifying best-performing planner for a specific planning domain using data of IPC-2011.
+        </li>
+        <li>
+          <b>Usecase 2:</b> Macro Selection for Improving Planner Performance: We demonstrate the usage of ontology to extract domain-specific macros - which are action orderings - and show that they can improve planner performance drastically.
+        </li>
+      </ol>
+    </p>
+ </content>
+
+<hr>
+<article class="mb-5" id="resources">
 <content>
 <h2>List of Resources </h2>
 <ul>
@@ -55,10 +72,6 @@ title: "Explanation Ontology: A General-Purpose, Semantic Representation for Sup
     <td>Explanation Types</td>
     <td><a href="{{site.baseurl}}files/modeling#explanationtypes">Modeling</a> </td> 
   </tr>
-    <!--<tr>
-    <td> </td>
-    <td> (b) <a href="./application.html">Faceted Browser</a> </td> 
-  </tr>-->
     <tr>
     <td>Examples</td>
     <td><a href="{{site.baseurl}}files/clinicalexample">Use Case Examples</a> </td> 
@@ -76,84 +89,42 @@ title: "Explanation Ontology: A General-Purpose, Semantic Representation for Sup
     <td><a href="index#toolsused">References to tools used</a> </td> 
   </tr>
 </table>
-  
- </ul>
- </content>
+</ul>
+</content>
  
- <hr/>
- 
- <article class="mb-5" id="toolsused">
+<hr>
+<article class="mb-5" id="toolsused">
 <content>
-  
-  
 <h2>Tools Used during Development</h2>
   <ul>
-  <li>Ontology Editor: <a href="https://protege.stanford.edu/products.php#desktop-protege">Protege 5.5.0</a></li>
-  <li>Conceptual Diagram created using <a href="https://www.omnigroup.com/omnigraffle/">Omnigraffle</a></li>
-  <li>Ontology documentation tool, <a href="https://github.com/dgarijo/Widoco">Widoco</a></li>
-  <li>RDF Visualization generated with <a href="http://jimmccusker.github.io/rdfviewer/">RDFViewer</a> and <a href="https://github.com/protegeproject/ontograf">Ontograf</a> in Protege</li>
+  <li>Ontology Editor: <a href="https://protege.stanford.edu/">Protege</a></li>
+  <li>Conceptual Diagram created using <a href="https://app.diagrams.net/">draw.io</a></li>
+  <li>Ontology documentation tool: <a href="https://github.com/RDFLib/pyLODE">pyLODE</a></li>
+  <li>RDF Visualization generated with <a href="https://rdflib.readthedocs.io/en/stable/">RDFLib</a></li>
   </ul>
-  </content>
-  <!--<iframe src="https://tetherless-world.github.io/explanation-ontology/WidocoDocumentation/index-en.html" style="width:100%;"/>-->
-  
-    <hr/>
-   
-    <article class="mb-5" id="contributors">
+</content>
+
+<hr>   
+<article class="mb-5" id="contributors">
 <content>
-  <h2>Team</h2>
-  <h3>Current Contributors</h3>
-   Shruthi Chari<sup>1</sup>, Oshani Seneviratne<sup>1</sup>, Mohamed Ghalwash<sup>2</sup>, Sola Shirai<sup>1</sup> Daniel M. Gruen<sup>1</sup>, Pablo Meyer<sup>2</sup>, Prithwish Chakraborty<sup>2</sup>, Deborah L. McGuinness<sup>1</sup>
-  <h3>Past Contributors</h3>
-  Morgan Foreman<sup>2</sup>,  Amar K. Das<sup>2</sup>
-<h3><a href="https://www.rpi.edu/"><sup>1</sup>Rensselaer Polytechnic Institute</a> | <a href="https://research.ibm.com/science"><sup>2</sup>IBM Research</a></h3>
-   </content>
- 
-  <article class="mb-5" id="publications">
+  <h2>Contributors</h2>
+   Bharath Muppasani<sup>1</sup>, 
+   Vishal Pallagani<sup>1</sup>, 
+   Nitin Gupta<sup>1</sup>, 
+   Biplav Srivastava<sup>1</sup>,
+   Raghava Mutharaju<sup>2</sup>, 
+   Michael N. Huhns<sup>1</sup>, and 
+   Vignesh Narayanan<sup>1</sup>
+<h3><a href="https://sc.edu/"><sup>1</sup>University of South Carolina, USA</a> | <a href="https://iiitd.ac.in/"><sup>2</sup>IIIT-Delhi, India</a></h3>
+</content>
+
+<hr>
+<article class="mb-5" id="publications">
 <content>
   <h2>Publications</h2>
   <ul>
-    <li>Chari, Shruthi, Oshani Seneviratne, Mohamed Ghalwash, Sola Shirai, Daniel M. Gruen, Pablo Meyer, Prithwish Chakraborty, and Deborah L. McGuinness. "Explanation Ontology: A General-Purpose, Semantic Representation for Supporting User-Centered Explanations."</li>
-    <li>Chari, Shruthi, Prasant Acharya, Daniel M. Gruen, Olivia Zhang, Elif K. Eyigoz, Mohamed Ghalwash, Oshani Seneviratne et al. "Informing clinical assessment by contextualizing post-hoc explanations of risk prediction models in type-2 diabetes." Artificial Intelligence in Medicine 137 (2023): 102498</li>
-    <li>Chari, Shruthi, Prithwish Chakraborty, Mohamed Ghalwash, Oshani Seneviratne, Elif K. Eyigoz, Daniel M. Gruen, Fernando Suarez Saiz, Ching-Hua Chen, Pablo Meyer Rojas, and Deborah L. McGuinness. "Leveraging Clinical Context for User-Centered Explainability: A Diabetes Use Case." arXiv preprint arXiv:2107.02359 (2021).</li>
-    <li>Padhiar, I., Seneviratne, O., Chari, S., Gruen, D., & McGuinness, D. L. (2021, April). Semantic modeling for food recommendation explanations. In 2021 IEEE 37th International Conference on Data Engineering Workshops (ICDEW) (pp. 13-19). IEEE.</li>
-    <li>[<b>Best Paper</b>] Chari, S., Chakraborty, P., Seneviratne, O., Ghalwash, M., Gruen, D. M., Sow, D., & McGuinness, D. L. (2021). Towards Clinically Relevant Explanations for Type-2 Diabetes Risk Prediction with the Explanation Ontology. AMIA.</li>
-    <li>Gruen, Daniel M., Shruthi Chari, Morgan A. Foreman, Oshani Seneviratne, Rachel Richesson, Amar K. Das, and Deborah L. McGuinness. "Designing for ai explainability in clinical context." AAAI, 2021.</li>
-    <li>[<b>Best Resource Paper</b>] Explanation Ontology: A Model of Explanations for User-Centered AI; Shruthi Chari , Oshani Seneviratne , Daniel M. Gruen ,  Morgan A. Foreman , Amar K. Das, Deborah L. McGuinness; Resource Track,19th International Semantic Web Conference 2020</li>
-    <li>Explanation Ontology in Action: A Clinical Use-Case; Shruthi Chari , Oshani Seneviratne , Daniel M. Gruen ,  Morgan A. Foreman , Amar K. Das, Deborah L. McGuinness; Posters and Demo Track,19th International Semantic Web Conference 2020</li>
-    <li>S Chari, O Seneviratne, DM Gruen, DL McGuinness. "Foundations of Explainable Knowledge-Enabled Systems." In Ilaria Tiddi, Freddy Lecue, Pascal Hitzler (eds.), Knowledge Graphs for eXplainable AI -- Foundations, Applications and Challenges. Studies on the Semantic Web, pp 23 - 48; 2020</li>
-<li>S Chari, O Seneviratne, DM Gruen, DL McGuinness. "Directions for Explainable Knowledge-Enabled Systems." In Ilaria Tiddi, Freddy Lecue, Pascal Hitzler (eds.), Knowledge Graphs for eXplainable AI -- Foundations, Applications and Challenges. Studies on the Semantic Web, pp 245 - 261; 2020</li>
+    <li>
+      Muppasani, Bharath & Pallagani, Vishal & Srivastava, Biplav & Mutharaju, Raghava & Huhns, Michael & Narayanan, Vignesh. (2023). A Planning Ontology to Represent and Exploit Planning Knowledge for Performance Efficiency. <i>arXiv preprint arXiv:2307.13549.</i>
+    </li>
   </ul>
-  </content>
-<!-- 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div> -->
+</content>

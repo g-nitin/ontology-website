@@ -1,4 +1,4 @@
-title: Explanation Ontology - Modeling Explainability in User-Centered AI System Design
+title: A Planning Ontology to Represent and Exploit Planning Knowledge for Performance Efficiency
 
 # Dependencies
 markdown:         kramdown
@@ -11,9 +11,9 @@ permalink:        pretty
 url:              https://g-nitin.github.io/ontology-website/
 baseurl:          https://g-nitin.github.io/ontology-website/
 
-author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+# author:
+#   name:           'Mark Otto'
+#   url:            https://twitter.com/mdo
 
 paginate:         5
 

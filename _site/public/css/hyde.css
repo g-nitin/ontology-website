@@ -53,9 +53,9 @@ html {
  * out above content in mobile and later moves to the side with wider viewports.
  */
 
-.sidebar {
+ .sidebar {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 2rem 0; /* Changed from 2rem 1rem */
   color: rgba(255,255,255,.5);
   background-color: #202020;
 }
@@ -67,6 +67,7 @@ html {
     bottom: 0;
     width: 18rem;
     text-align: left;
+    padding-left: 0; /* Added this line */
   }
 }
 
@@ -86,7 +87,7 @@ html {
 /* Sidebar nav */
 .sidebar-nav {
   margin-top: 0;
-/*   margin-bottom: 1 rem; */
+  margin-bottom: 1 rem;
 }
 .sidebar-nav-item {
   display: block;
@@ -106,13 +107,12 @@ a.sidebar-nav-item:focus {
  * contents to the bottom of the sidebar in tablets and up.
  */
 
-@media (min-width: 48em) {
+ @media (min-width: 48em) {
   .sidebar-sticky {
     position: absolute;
-    right:  1rem;
-    top: 20rem;
-/*     bottom: 1rem; */
-    left:   1rem;
+    right: 1rem;
+    top: 15rem;
+    left: 0; /* Changed from 1rem */
   }
 }
 
@@ -254,8 +254,17 @@ a.sidebar-nav-item:focus {
   color: #8f5536;
 }
 
+/* Garnet */
+.theme-base-g .sidebar {
+  background-color: #73000A;
+}
+.theme-base-g .content a,
+.theme-base-g .related-posts li a:hover {
+  color: #73000A;
+}
+
 .collapsible {
-  background-color: #aa759f;
+  background-color: #73000A;
   color: white;
   cursor: pointer;
   width: 100%;
@@ -271,7 +280,7 @@ a.sidebar-nav-item:focus {
 }
 
 .active, .collapsible:hover {
-  background-color: #aa759f;
+  background-color: #73000A;
 }
 
 .collapsible:after {
@@ -290,14 +299,14 @@ a.sidebar-nav-item:focus {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #fde6ea;
+  background-color: #F8F0E3;
 }
 
 .button-content a {
-  color:purple;
+  color:#73000A;
 }
 
 .button-content li {
-  color:purple;
+  color:#73000A;
   list-style-type:disc;
 }
